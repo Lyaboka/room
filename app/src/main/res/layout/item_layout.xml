@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="3dp"
-                android:layout_margin="1dp">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,6 @@
             android:id="@+id/fioTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#FFC107"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="16sp" />
 
@@ -27,14 +26,23 @@
             android:id="@+id/postTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#FFC107"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <TextView
             android:id="@+id/salaryTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#FFC107"
             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E85353"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

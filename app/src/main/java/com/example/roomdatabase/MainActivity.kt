@@ -8,14 +8,21 @@ import com.example.roomdatabase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    private var binding: ActivityMainBinding? = null
+    val mBinding get() = binding!!
     lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(mBinding.root)
+
         APP = this
         navController = Navigation.findNavController(this, R.id.nav_fragment)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 }

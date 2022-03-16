@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "employees")
-class EmployeeModel (
+data class EmployeeModel (
 
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,

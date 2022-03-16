@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screens.Fragment2.Fragment2">
+    tools:context=".screens.Fragment2.SecondFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
